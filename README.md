@@ -24,5 +24,5 @@ START	     ID1       ID2              DIR 	 TEMP 9BITS   HUM    WIND AVG   GUST 
 11110101 10110101 11111010 00000000 1110000 1 00101111 00110101 00000000 00000010 00000000 0000010 1 11011000 11001000 00110110
 ```
 
-![WS-1030 Weather Station](ws-1030-weather-station-protocol.png)
+![WS-1030 Weather Station](img/ws-1030-weather-station-protocol.png)
 
