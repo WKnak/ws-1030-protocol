@@ -152,7 +152,7 @@ void setup() {
   pinMode(RF_IN, INPUT);
   
   Serial.begin(115200);
-  Serial.println("WEATHER STATION WS-1030 DATA LOGGER");
+  Serial.println("WEATHER STATION WS-1030 DATA LOGGER (vs H2)");
   Serial.println("TiNX Tecnologia");
   Serial.println("");
   Serial.println("[TEMPERATURA] [HUMIDADE] [VENTO DIRECAO] [VENTO AVG] [VENTO RAJADA] [CHUVA ACUMULADA]");
@@ -180,13 +180,6 @@ void setup() {
   
   // enable interrupts
   sei();
-}
-
-void beep() {
-  analogWrite(BUZ_PIN, 200);
-  delay(10);
-  analogWrite(BUZ_PIN, 0);
-  
 }
 
 void outputExt() {
@@ -289,7 +282,6 @@ void loop() {
             
             outputExt();
             
-            //beep();
           } else {
             //Serial.print(" # CHKSUM INVALIDO #");          
           }
